@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import { LINKS } from '../config';
+---
+
+<Layout title="Welcome to Astro.">
+	<main class="max-w-screen-md mx-auto">
+		<h1 class="text-4xl font-bold text-center my-4 dark:text-white">Otterlord's Links</h1>
+		<p class="text-lg dark:text-slate-400 text-center my-4">
+      Check out my links below!
+		</p>
+		<ul role="list" class="flex flex-wrap">
+      {LINKS.map((link) => <Card title={link.title} body={link.body} href={link.url} />)}
+		</ul>
+	</main>
+</Layout>

@@ -1,0 +1,21 @@
+---
+export interface Props {
+	title: string;
+	body: string;
+	href: string;
+}
+
+const { href, title, body } = Astro.props;
+---
+
+<li class="flex w-full sm:flex-[0_0_50%] list-none p-2">
+	<a href={href} class={"rounded-lg shadow w-full no-underline p-4 bg-white" + (href ? ' dark:bg-slate-800 hover:bg-slate-50 dark:text-slate-400 cursor-pointer dark:hover:bg-slate-700' : ' dark:bg-slate-800 text-slate-500 dark:text-slate-600 cursor-not-allowed')} target="_blank" referrerpolicy="no-referrer">
+		<h2 class={"text-xl font-bold" + (href ? 'dark:text-white' : 'dark:text-slate-600')}>
+			{title}
+			<span>&rarr;</span>
+		</h2>
+		<p>
+			{body}
+		</p>
+	</a>
+</li>
