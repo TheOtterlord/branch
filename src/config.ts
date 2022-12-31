@@ -29,7 +29,8 @@ export const LINKS: Link[] = [
   },
   {
     title: "Blog",
-    body: "Coming soon™",
+    body: "Read my personal blog",
+    url: "https://blog.otterlord.dev"
   },
   {
     title: "Stack Overflow",
