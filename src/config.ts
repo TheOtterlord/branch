@@ -44,6 +44,7 @@ export const LINKS: Link[] = [
   },
   {
     title: "Discord",
-    body: "Also coming soon™",
+    body: "Join the Otter Holt",
+    url: "https://dsc.gg/otterlord"
   }
 ]
